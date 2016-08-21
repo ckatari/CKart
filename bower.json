@@ -1,0 +1,21 @@
+{
+  "name": "ckart",
+  "description": "Online Store",
+  "main": "index.js",
+  "author": "Chaitanya Katari",
+  "moduleType": [
+    "amd"
+  ],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "requirejs": "^2.1.16"
+  }
+}

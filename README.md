@@ -1,5 +1,0 @@
-CKart
-===========
-
-Online Store
-# CKart
