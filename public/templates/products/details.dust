@@ -2,23 +2,21 @@
 
 {<body}
    <div class="large-4 columns product">
-       <img src="/img/gc1.jpg">
+       <img src="/img/{product.cover}">
    </div>
    <div class="large-8 columns product">
-   	   <h4><strong>EVGA GeForce GTX 950 2GB</strong></h4>
+   	   <h4><strong>{product.title}</strong></h4>
    	   <ul class="productInfo">
-   	   	   <li>EVGA "ACX 2.0" Cooling Technology</li>
-   	   	   <li>Base Clock: 1165 MHz / Boost Clock: 1355 MHz</li>
-   	   	   <li>Memory Clock: 6610 MHz Effective</li>
-   	   	   <li>CUDA Cores: 768</li>
+   	   	   <li>Category: {product.category}</li>
+   	   	   <li>RAM: {product.ram}</li>
+   	   	   <li>Type: {product.type}</li>
+   	   	   <li>Weight: {product.weight}</li>
    	   </ul>
    	   <br>
-   	   <div class = "price"><h4><strong>Buy it for <span>$149.99</span></strong></h4></div> 
+   	   <div class = "price"><h4><strong>Buy it for <span>${product.price}</span></strong></h4></div>
 	   <br>
-	   <p>The EVGA GeForce GTX 950 is a true gaming GPU designed for every PC gamer. It's built to the exact specifications of the GeForce GTX family and powered by NVIDIA Maxwell - the most advanced GPU architecture ever created - to deliver 3x the performance of previous-generation cards.</p>
+	   <p>{product.description}</p>
 
 	   <a class="button success">Add To Cart</a>
    </div>
 {/body}
-
-

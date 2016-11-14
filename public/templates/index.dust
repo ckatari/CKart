@@ -1,49 +1,21 @@
 {>"layouts/master" /}
 
 {<body}
-
-		<div class="row">
-            <div class="large-12 columns">
-                <video  class="resx" controls autoplay loop>
-                    <source src="/media/2.mp4" type="video/mp4">
-                </video>
-            </div>
-        </div>
-    <div class = "large-3 columns product">
-		<img src = "/img/gc1.jpg">
-		<h4><strong>EVGA GeForce GTX 950 2GB</strong></h4>
-		<p>The EVGA GeForce GTX 950 is a true gaming GPU designed for every PC gamer. It's built to the exact specifications of the GeForce GTX family and powered by NVIDIA Maxwell - the most advanced GPU architecture ever created - to deliver 3x the performance of previous-generation cards.</p>
-		<div class = "price"><h4><strong>Buy it for <span>$149.99</span></strong></h4></div> 
-		<br>
-		<a href = "/products/details/1" class = "button small">Product details</a>
+	<div class="row">
+					<div class="large-12 columns">
+							<video  class="resx" controls autoplay loop>
+									<source src="/media/2.mp4" type="video/mp4">
+							</video>
+					</div>
 	</div>
-
-	<div class = "large-3 columns product">
-		<img src = "/img/gc2.jpg">
-		<h4><strong>ASUS STRIX Radeon R7 370 4 GB</strong></h4>
-		<p>ASUS Introduces the STRIX-R7370-DC2OC-4GD5-GAMING Graphics Card</p>
-		<div class = "price"><h4><strong>Buy it for <span>$154.99</span></strong></h4></div> 
-		<br>
-		<a href = "/products/details/2" class = "button small">Product details</a>
-	</div>
-
-	<div class = "large-3 columns product">
-		<img src = "/img/gc3.jpg">
-		<h4><strong>EVGA GeForce GT 740 Single Slot 4GB</strong> </h4>
-		<p>Accelerate your entire PC experience with a new EVGA GeForce GT 740 graphics card. Enjoy all your videos and pictures at HD resolutions, with 10X faster video editing, 13X faster photo editing, and 9X faster web browsing compared to integrated graphics.</p>
-		<div class = "price"><h4><strong>Buy it for <span>$99.99</span></strong></h4></div> 
-		<br>
-		<a href = "/products/details/3" class = "button small">Product details</a>
-	</div>
-
-	<div class = "large-3 columns product">
-		<img src = "/img/gc4.jpg">
-		<h4><strong>Gigabyte GeForce GT 710 1.0 1GB</strong></h4>
-		<p>Powered by NVIDIA GeForce GT 710 GPU, Integrated with the first 1024MB DDR3 memory and 64-bit memory interface, Core Clock: 954MHz and Features Dual-link DVI-D / D-Sub / HDMI.</p>
-		<div class = "price"><h4><strong>Buy it for <span>$89.99</span></strong></h4></div> 
-		<br>
-		<a href = "/products/details/4" class = "button small">Product details</a>
-	</div>
+		{#products}
+	    <div class = "large-3 columns product end">
+				<img src = "/img/{.cover}">
+				<h4><strong>{.title}</strong></h4>
+				<p>{.truncText}</p>
+				<div class = "price"><h4><strong>Buy it for <span>{.price}</span></strong></h4></div>
+				<br>
+				<a href = "/products/details/{._id}" class = "button small">Product details</a>
+		  </div>
+		{/products}
 {/body}
-
-
